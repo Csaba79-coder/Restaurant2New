@@ -1,0 +1,4 @@
+Tányér,100
+Evőeszköz,100
+Tálca,30
+Szalvéta,400

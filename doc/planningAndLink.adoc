@@ -1,0 +1,62 @@
+Restaurant Demo
+
+== 1.	rész
+
+https://www.youtube.com/watch?v=6v8-XIo7i-s&list=PLiI5npG01fe9TagrJ8Q3P8rO3CvXiVH8q&index=25
+
+1. Készleteink feltöltése:
+1.1. lépés: hozzunk létre StorageElement osztályokat
+- Kell egy ősosztály
+tartalmazza a közös változókat és metódusokat
+- Kell minden kategóriának 1-1 osztály
+tartalmazzák a saját változóikat és metódusaikat
+
+	1.2. lépés: adatok beolvasása
+		- BufferedReader
+		- beolvassuk a fájlt
+		- végigmegyünk egyessével a sorokon és létrehozzuk a saját
+			storage subelement objektum listánkat
+		- végeredmény 3 lista: List<Drink>, List<Tool>, List<Meal>
+
+2. Készleteink kezelése:
+2.2.1. lépés: változtassuk meg a Tools.txt paramétereit,
+hogy egyértelműsítsük, hogy mihez mi kell
+name,amount,isMealTool,isDrinkTool
+- refaktorálni (kibővíteni) a Tool osztályt
+- refaktorálni (kibővíteni) a Tool feltöltését (DocumentReader)
+- updatelni a Tools.txt input fájlt
+
+	2.2.2. lépés: hozzunk létre metódusokat a Drink és Meal példányok
+		mennyiség csökkentésére
+		- visszatérési érték: Boolean (sikerült-e)
+		- bemeneti paraméter: Drink / Meal (overload), amount
+		- validálás: van elég mennyiségünk?
+			- igen:
+				- Tool-k mennyiségcsökkentése (4.2)
+					- visszatérés ellenörzése:
+						igen:
+							- Drink / Meal mennyiség csökkentés
+								-> visszatérés: true
+						nem: visszatérés: false
+			- nem: visszatérés: false
+
+	2.2.3. lépés: hozzunk létre metódust a Tool példányok
+		mennyiség csökkentésére
+		- visszatérési érték: Boolean
+		- bemeneti paraméter: String type ("drink" / "meal"), amount
+		- végigmegyünk a List<Tool> tools listánkon
+			- megnézzük, hogy szükséges-e az adott type-hoz
+				- igen:
+					- Tool mennyiség csökkentés (+amount check)
+						-> visszatérés: true
+				- nem: visszatérés: false
+
+    2.2.4. lépés: adjuk hozzá egy metódust a StorageElement ősosztályhoz
+        az amount csökkentésére
+
+
+
+== 2. rész
+
+https://www.youtube.com/watch?v=gCbXTCBDyBg&list=PLiI5npG01fe9TagrJ8Q3P8rO3CvXiVH8q&index=26
+
