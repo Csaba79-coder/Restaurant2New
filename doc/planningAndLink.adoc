@@ -5,7 +5,8 @@ Restaurant Demo
 https://www.youtube.com/watch?v=6v8-XIo7i-s&list=PLiI5npG01fe9TagrJ8Q3P8rO3CvXiVH8q&index=25
 
 1. Készleteink feltöltése:
-1.1. lépés: hozzunk létre StorageElement osztályokat
+
+    1.1. lépés: hozzunk létre StorageElement osztályokat
 - Kell egy ősosztály
 tartalmazza a közös változókat és metódusokat
 - Kell minden kategóriának 1-1 osztály
@@ -19,7 +20,8 @@ tartalmazzák a saját változóikat és metódusaikat
 		- végeredmény 3 lista: List<Drink>, List<Tool>, List<Meal>
 
 2. Készleteink kezelése:
-2.2.1. lépés: változtassuk meg a Tools.txt paramétereit,
+
+    2.2.1. lépés: változtassuk meg a Tools.txt paramétereit,
 hogy egyértelműsítsük, hogy mihez mi kell
 name,amount,isMealTool,isDrinkTool
 - refaktorálni (kibővíteni) a Tool osztályt
